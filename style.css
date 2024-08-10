@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); /* Added a new aesthetic font */
+
+/* General styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#bgVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+}
+
+.over::before, .over::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 0;
+}
+
+.over::before {
+    top: 0;
+    background: linear-gradient(to bottom, #000, transparent);
+}
+
+.over::after {
+    bottom: 0;
+    background: linear-gradient(to top, #000, transparent);
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.container .logo h2 img {
+    width: 130px;
+    height: 70px;
+    margin: 30px 50px;
+}
+
+.container .btn a {
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 30px;
+    background: transparent;
+    margin-right: 50px;
+    border-radius: 20px;
+    border: 2px solid #ffd900;
+}
+
+.container .btn a:hover {
+    background: rgba(160, 136, 1, 0.913);
+}
+
+/* Title styles */
+.mid {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.travel-title {
+    font-size: 10rem;
+    color: #ffffff;
+    font-family: "Lobster", cursive; /* Changed font-family to Lobster */
+    letter-spacing: 4px;
+    animation: fadeIn 3s ease-in-out; /* Added fade-in animation */
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Date and follow styles */
+.down {
+    margin: 480px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.down .date h2 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.down .date h2 span {
+    font-size: 1.8rem;
+    opacity: 0.8;
+    color: #ffd900;
+}
+
+.down .follow ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.down .follow ul i {
+    color: #fff;
+    margin-right: 25px;
+    font-size: 1.2rem;
+}
+
+.down .follow ul i:hover {
+    color: #ffd900;
+}
+
+@media (max-width:390px) {
+    .container .logo h2 img {
+        width: 70px;
+        height: 100%;
+        margin: 30px 20px;
+    }
+
+    .container .btn a {
+        padding: 12px 20px;
+        margin-right: 20px;
+    }
+
+    .travel-title {
+        font-size: 6rem;
+    }
+
+    .down .date h2 {
+        font-size: 2.5rem;
+        margin-top: 180px;
+        margin-left: -30px;
+    }
+
+    .down .follow ul {
+        margin-top: 180px;
+        margin-right: -50px;
+    }
+}
+
+@media (max-width:360px) {
+    .container .btn a {
+        padding: 8px 17px;
+        margin-right: 20px;
+    }
+
+    .down {
+        margin: 290px 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    .down .date h2 {
+        font-size: 2rem;
+        margin-top: 180px;
+        margin-left: -35px;
+    }
+
+    .down .follow ul i {
+        color: #fff;
+        margin-right: 15px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:1024px) {
+    .container .logo h2 img {
+        width: 160px;
+        height: 90px;
+        margin: 30px 50px;
+    }
+
+    .container .btn a {
+        padding: 20px 40px;
+    }
+
+    .down {
+        margin: 1110px 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    .travel-title {
+        font-size: 15rem;
+    }
+}
+
+@media (max-width:640px) {
+    .container .logo h2 img {
+        width: 70px;
+        height: 40px;
+        margin: 30px 20px;
+    }
+
+    .container .btn a {
+        padding: 10px 20px;
+    }
+
+    .travel-title {
+        font-size: 5rem;
+    }
+
+    .down {
+        margin: 290px 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    .down .date h2 {
+        font-size: 1.8rem;
+        margin-top: 180px;
+        margin-left: -35px;
+    }
+}
+
+@media (max-width:740px) {
+    .down {
+        margin: 390px 50px;
+    }
+}
