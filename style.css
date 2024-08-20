@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); /* Added a new aesthetic font */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 /* General styles */
 *{
@@ -91,9 +91,9 @@ body, html {
 .travel-title {
     font-size: 10rem;
     color: #ffffff;
-    font-family: "Lobster", cursive; /* Changed font-family to Lobster */
+    font-family: "Lobster", cursive;
     letter-spacing: 4px;
-    animation: fadeIn 3s ease-in-out; /* Added fade-in animation */
+    animation: fadeIn 3s ease-in-out;
 }
 
 /* Animation */
@@ -124,6 +124,7 @@ body, html {
     font-size: 3rem;
     font-weight: 700;
     letter-spacing: 3px;
+    display: none;
 }
 
 .down .date h2 span {
@@ -144,129 +145,77 @@ body, html {
     color: #fff;
     margin-right: 25px;
     font-size: 1.2rem;
+    display: none;
 }
 
 .down .follow ul i:hover {
     color: #ffd900;
 }
 
-@media (max-width:390px) {
+@media (max-width:428px) {
     .container .logo h2 img {
         width: 70px;
-        height: 100%;
+        height: auto;
         margin: 30px 20px;
     }
 
     .container .btn a {
-        padding: 12px 20px;
+        padding: 10px 20px;
         margin-right: 20px;
     }
 
     .travel-title {
         font-size: 6rem;
     }
-
-    .down .date h2 {
-        font-size: 2.5rem;
-        margin-top: 180px;
-        margin-left: -30px;
-    }
-
-    .down .follow ul {
-        margin-top: 180px;
-        margin-right: -50px;
-    }
 }
 
-@media (max-width:360px) {
-    .container .btn a {
-        padding: 8px 17px;
-        margin-right: 20px;
-    }
-
-    .down {
-        margin: 290px 50px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-        z-index: 1;
-    }
-
-    .down .date h2 {
-        font-size: 2rem;
-        margin-top: 180px;
-        margin-left: -35px;
-    }
-
-    .down .follow ul i {
-        color: #fff;
-        margin-right: 15px;
-        font-size: 1rem;
-    }
-}
-
-@media (max-width:1024px) {
-    .container .logo h2 img {
-        width: 160px;
-        height: 90px;
-        margin: 30px 50px;
-    }
-
-    .container .btn a {
-        padding: 20px 40px;
-    }
-
-    .down {
-        margin: 1110px 50px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-        z-index: 1;
-    }
-
-    .travel-title {
-        font-size: 15rem;
-    }
-}
-
-@media (max-width:640px) {
+@media (max-width:412px) {
     .container .logo h2 img {
         width: 70px;
-        height: 40px;
+        height: auto;
         margin: 30px 20px;
     }
 
     .container .btn a {
         padding: 10px 20px;
+        margin-right: 20px;
     }
 
     .travel-title {
-        font-size: 5rem;
-    }
-
-    .down {
-        margin: 290px 50px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-        z-index: 1;
-    }
-
-    .down .date h2 {
-        font-size: 1.8rem;
-        margin-top: 180px;
-        margin-left: -35px;
+        font-size: 6rem;
     }
 }
 
-@media (max-width:740px) {
-    .down {
-        margin: 390px 50px;
+@media (max-width:393px) {
+    .container .logo h2 img {
+        width: 70px;
+        height: auto;
+        margin: 30px 20px;
+    }
+
+    .container .btn a {
+        padding: 10px 20px;
+        margin-right: 20px;
+    }
+
+    .travel-title {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width:360px) {
+    .container .logo h2 img {
+        width: 70px;
+        height: auto;
+        margin: 30px 20px;
+    }
+
+    .container .btn a {
+        padding: 10px 20px;
+        margin-right: 20px;
+    }
+
+    .travel-title {
+        font-size: 6rem;
     }
 }
